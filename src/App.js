@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'react-w3-components';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App w3-container">
+        <h2>Card Example</h2>
+        <div className="w3-card-4 w3-display-middle" >
+          <header className="w3-container w3-light-grey">
+            <div id="wrapper"></div>
+          </header>
+          <div className="w3-container">
+            <p>New friend request</p>
+            <hr/>
+            <div id="avatar" className="w3-left w3-circle " ></div>
+            <div id="info" ></div><br/>
+          </div>
+          <button className="w3-button w3-block w3-dark-grey">+ Connect</button>
+        </div>
+      </div>
   );
 }
 
