@@ -4,7 +4,7 @@ import Info from './components/info'
 import './App.css'
  
 function App(){
-  return(<Info/>);
+  return <Info/>;
 }
  
 export default App

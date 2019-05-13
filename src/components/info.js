@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Faker from 'faker'
 import Header from './Header'
+import Body from './Body'
+
 class Info extends Component{
     constructor(props) {
         super(props)
@@ -28,19 +30,9 @@ class Info extends Component{
         return(  <div className="w3-container w3-mobile">
         <h2>Card Example</h2>
         <div id="container" className="w3-card-4 w3-display-middle" >
-         <Header/>
-          <div className="w3-container">
-            <p>New friend request</p>
-            <hr/>
-            <div id="avatar"><img src={user.avatar} className="w3-left w3-circle "/></div>
-            <div id="info" >
-            Email: {user.email}<br/>
-            Company: {user.company}<br/>
-            Phone: {user.phone}<br/>
-            Address: {user.address}<br/>
-            City: {user.city}<br/>
-            </div><br/>
-          </div>
+         <Header name = {user.name}/>
+         <Body email = {user.email} avatar = {user.avatar} company = {user.company} 
+         phone = {user.phone} address = {user.address} city = {user.city}/>
           <button className="w3-button w3-block w3-dark-grey">+ Connect</button>
         </div>
       </div> )

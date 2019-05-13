@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-    function Header(){
-        return(<header className="w3-container w3-light-grey">
-        <div id="wrapper"> {user.name}<br/></div>
-        </header>);
-      }
+class Header extends Component{
+
+     
+    render(){return(<header className="w3-container w3-light-grey">
+        <div id="wrapper"> {this.props.name}<br/></div>
+        </header>);}
+    }
+      
 
 
 export default Header;
