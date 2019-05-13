@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Faker from 'faker'
 import Header from './Header'
 import Body from './Body'
+import Button from './Button'
+
 
 class Info extends Component{
     constructor(props) {
@@ -27,15 +29,20 @@ class Info extends Component{
           }))
       }
       renderUsers(user) {
-        return(  <div className="w3-container w3-mobile">
-        <h2>Card Example</h2>
-        <div id="container" className="w3-card-4 w3-display-middle" >
-         <Header name = {user.name}/>
-         <Body email = {user.email} avatar = {user.avatar} company = {user.company} 
-         phone = {user.phone} address = {user.address} city = {user.city}/>
-          <button className="w3-button w3-block w3-dark-grey">+ Connect</button>
-        </div>
-      </div> )
+        return(  
+          <div className="w3-container w3-mobile">
+            <h2>Card Example</h2>
+             <div id="container" className="w3-card-4 w3-display-middle" >
+                <Header name = {user.name}/>
+                <Body email = {user.email} 
+                      avatar = {user.avatar} 
+                    company = {user.company} 
+                    phone = {user.phone} 
+                    address = {user.address} 
+                    city = {user.city}/>
+                <Button/>
+              </div>
+          </div>)
       }
       render() {
         return <div>{this.renderUsers(this.state.user)}</div>
