@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Info from './components/info'
 
 import './App.css'
  
-class App extends Component {
- render(){return(<Info/>)}
+function App(){
+  return(<Info/>);
 }
  
 export default App

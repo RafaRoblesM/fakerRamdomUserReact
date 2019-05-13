@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Faker from 'faker'
-
+import Header from './Header'
 class Info extends Component{
     constructor(props) {
         super(props)
@@ -28,9 +28,7 @@ class Info extends Component{
         return(  <div className="w3-container w3-mobile">
         <h2>Card Example</h2>
         <div id="container" className="w3-card-4 w3-display-middle" >
-          <header className="w3-container w3-light-grey">
-            <div id="wrapper"> {user.name}<br/></div>
-          </header>
+         <Header/>
           <div className="w3-container">
             <p>New friend request</p>
             <hr/>
